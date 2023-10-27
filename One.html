@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap 5</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand text-light" href="#"><img src="../Images/marvel.png" alt="marvel logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light fw-bold" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light  fw-bold" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold" href="#">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Movies
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Iron Man</a></li>
+                  <li><a class="dropdown-item" href="#">Captain America</a></li>
+                  <li><a class="dropdown-item" href="#">Thor</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Guardian of the Galaxy</a></li>
+                  <li><a class="dropdown-item" href="#">Ant-Man</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!--CAROUSEL-->
+    <section class="landing">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../Images/BP1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>BLACK PANTHER</h5>
+              <p>Black Panther in Wakanda Forever</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../Images/DW.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>DEADPOOL & WOLVERINE</h5>
+              <p>Deadpool & Wolverine in Deadpool 3</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../Images/BAT.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>THE BATMAN</h5>
+              <p>Batman in Gotham City</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+
+    <!--CARDS-->
+    <section class="cardz">
+      <div class="container">
+      <h1 class="text-center text-light mt-5">New Release</h1>
+      <div class="row">
+        <div class="col-3">
+          <div class="card mt-5 ms-5" style="width: 15rem;">
+            <img src="https://static-01.daraz.pk/p/6e3b4083e25c2c51970660d5b2dbd0cb.jpg" class="card-img-top" style="height: 35vh;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">IRON MAN</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the     card's content.</p>
+              <a href="#" class="btn btn-primary cusb">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card mt-5 ms-5" style="width: 15rem;">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTYzOTc2NzU3N15BMl5BanBnXkFtZTcwNjY3MDE3NQ@@._V1_.jpg"       class="card-img-top" style="height: 35vh;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">CAPTAIN AMERICA</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the   card's content.</p>
+              <a href="#" class="btn btn-primary cusb">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card mt-5 ms-5" style="width: 15rem;">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_FMjpg_UX1000_.jpg"  class="card-img-top" style="height: 35vh;" alt="...  ">
+            <div class="card-body">
+              <h5 class="card-title text-center">THOR</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary cusb">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card mt-5 ms-5" style="width: 15rem;">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_guardiansofthegalaxy_vol3_2106_fe5dfa27.jpeg" class="card-img-top"  style="height: 35vh;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">GURADIAN OF THE GALAXY</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="row">
+
+                <a href="#" class="btn btn-sm btn-primary cusb w-50 text-center d-flex align-items-center">Watch Now</a>
+              </div>
+            </div>
+          </div>
+        </div>     
+      </div>
+      </div>
+    </section>
+
+    <!-- New Poster -->
+    <section class="posterz">
+      <div class="bg-dark">
+    <div class="container mt-5">
+      <h1 class="text-center mt-5 text-light">New Poster</h1>
+      <h1 class="text-center mt-4 text-success">LOKI Season 2</h1>
+      <div class="row">
+        <div class="col-6 mt-3">
+          <img style="height: 90vh;" src="../Images/loki.jpg" alt="loki poster">
+        </div>
+        <div class="col-6 mt-3 text-light">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quas error corporis, quisquam iusto quae nobis accusamus architecto sunt aliquid alias magnam exercitationem aliquam illo earum ipsa. Alias, facilis fuga quaerat voluptatem deserunt repellat, delectus maiores commodi quae iusto modi consectetur hic accusantium animi quia quam nam quisquam magni, id consequuntur? Officiis, praesentium quae. Numquam sequi corrupti ab praesentium odio velit doloremque quas quod, delectus aliquam provident rem soluta quis vitae mollitia ex iure tempora, voluptas beatae cumque fuga nam. Doloribus corrupti nemo vel, a modi nobis ad veniam saepe pariatur explicabo beatae, quam debitis obcaecati natus provident enim labore necessitatibus, possimus cumque laborum id atque ea cum in! Fuga, expedita sunt. Fugit a sapiente fuga atque ipsam magni ipsa, nesciunt amet consequuntur maxime odit aspernatur earum corporis eveniet expedita? Delectus ex aperiam nam cumque exercitationem neque quo praesentium tempore cupiditate quis, porro sunt repudiandae dolorum natus vero ipsam ad ratione eligendi saepe, doloribus molestias amet obcaecati tempora. Dicta explicabo debitis ex aliquid cupiditate, minus quia vel molestiae fugit labore repudiandae facere asperiores maiores delectus culpa consequuntur sapiente ut nostrum reiciendis modi cum natus inventore non minima. Explicabo sint facere labore debitis maxime iste temporibus, dolores dicta, soluta voluptate velit minus voluptatibus asperiores quis facilis, veniam pariatur ipsam perferendis architecto consectetur. Pariatur dolores obcaecati voluptas voluptates impedit ipsa iusto praesentium, laboriosam architecto nostrum commodi dolor amet dicta earum vitae. Vero beatae dolores libero illo quaerat cum repellendus sint suscipit nemo natus vitae, consequuntur optio.</p>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+      <footer class="footer">
+        <div class="container">
+        <div class="row">
+            <img src="../Images/marvel.png" alt="">
+            <div class="col-4">
+              <ul>
+                <li><a href="Home"></a></li>
+                <li><a href="About US"></a></li>
+                <li><a href="Contact"></a></li>
+                <li><a href="Services"></a></li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <input type="text" class="searchbar">
+            </div>
+            </div>
+        </div>
+      </footer>
+    </section>
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
